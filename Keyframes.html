@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+
+<style>
+    .box {
+        transition-property: width, height, background-color, margin-left, opacity;
+        transition-duration: 3s;
+        width: 50px;
+        height: 2000px;
+        margin-left: 0;
+        opacity: .5;
+        background: red;
+    }
+<p>
+     <Strong>BAD MAN</strong>
+</p>
+    .box:hover {
+        background: green;
+        width: 400px;
+        height: 400px;
+        opacity: .5;
+        margin-left: 100px;
+    }
+
+    .rectangle {
+        animation-name: slidein;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        width: 400px;
+        height: 200px;
+        position: relative;
+        background: blue;
+
+    }
+
+    @keyframes slidein {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        left: 100px;
+    }
+
+    50% {
+        top: 100px;
+        left: 200px;
+    }
+
+    75% {
+        top: 0;
+        left: 250px;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+</style>
+
+<div class="box"></div>
+<div class="rectangle"></div>

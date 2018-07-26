@@ -1,0 +1,15 @@
+.box {
+	height: 300px;
+	width: 300px;
+	background-image: url(photos/wrGGSv8.jpg);
+	/*background-color: blue;*/
+	margin: 10px;
+	float: left;
+}
+ 
+@media all and (max-width: 900px) {
+	.box {
+		background-image: url(photos/images.jpg);
+		border: dashed 3px green;
+	}
+}
